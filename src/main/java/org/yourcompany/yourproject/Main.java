@@ -1,0 +1,21 @@
+package org.yourcompany.yourproject;
+
+/**
+ *
+ * @author paula
+ */
+
+public class Main{
+public static void main(String[] args) {
+    Bibliotecario bibliotecario1 = new Bibliotecario("123", "Juan", "juan@biblioteca.com", "Mañana");
+    System.out.println(bibliotecario1.darEmail());
+
+    Socio socio1 = new Socio("456", "Maria", "maria@biblioteca.com", 5);
+    socio1.registrarPrestamo(2);
+
+    
+
+    
+}
+}
+
