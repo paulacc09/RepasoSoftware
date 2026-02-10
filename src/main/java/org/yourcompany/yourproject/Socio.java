@@ -18,7 +18,7 @@ public class Socio extends Usuario {
     }
 
     public void registrarPrestamo(int cantidad) {
-        if (cantidad <= limiteEjemplares) {
+        if (cantidad >= limiteEjemplares) {
             throw new IllegalArgumentException("Supera el limite del socio");
         }
 
@@ -26,7 +26,7 @@ public class Socio extends Usuario {
             throw new IllegalStateException("El socio tiene multas pendientes");
         }
 
-        System.out.println("Se prestaron "  + cantidad + "libros.");
+        System.out.println("Se prestaron "  + cantidad + " libros.");
 
         
     }
