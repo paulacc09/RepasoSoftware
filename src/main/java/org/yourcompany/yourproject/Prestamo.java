@@ -23,10 +23,10 @@ public class Prestamo {
         return ejemplares;
     }
 
-    public void notificarCreacion(Notificador notificador) {
-        String mensaje = "Préstamo creado con " + ejemplares.size()
-                + " ejemplar(es). Socio: " + socio.getNombre();
+   public void notificarCreacion(Notificador notificador) {
+    String mensaje = "Préstamo creado con " + ejemplares.size()
+            + " ejemplar(es). Socio: " + socio.darNombre();
 
-        notificador.enviar(socio.getEmail(), mensaje);
+    notificador.enviarNotificacion(socio.darEmail(), mensaje);  
     }
 }

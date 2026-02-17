@@ -14,7 +14,7 @@ public class Libro {
     }  
     
     public void crearEjemplar(String isbn) {
-        Ejemplar nuevo = new Ejemplar(isbn); 
+        Ejemplar nuevo = new Ejemplar(isbn, this); 
         ejemplares.add(nuevo);
     }
     public String getTitulo(){
